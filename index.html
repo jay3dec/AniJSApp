@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>CodePen - A Pen by jay3dec</title>
+
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+
+<body>
+
+  <html>
+<head>
+	<title></title>
+	<!-- Animate.css library -->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/animatecss/3.1.0/animate.css">
+</head>
+<body>
+   <div class="container">
+
+     <div id="divLogin" class="login_screen">
+     <input id="txtLoginId" type="text" placeholder="Email Id" />
+     <input id="txtLoginPass" type="password" placeholder="Password" />
+       <h2 id="spnLogin"></h2>
+     <a href="#" class="btn" data-anijs="if: click, do: hinge animated, to: .login_screen, before: validateLogin">
+       SignIn
+     </a>
+
+       <a class="signup-link" data-anijs="if: click, do: rollIn animated, to: .reg_screen,before: showReg" href="#">Register ?</a>
+
+     </div>
+
+      <br />
+     <div id="divReg" class="reg_screen" style="display:none">
+       <input id="txtName" type="text" placeholder="Name" />
+       <input id="txtEmail" type="text" placeholder="Email Id" />
+       <input id="txtPassword" type="password" placeholder="Password" />
+
+       <h2 id="spnStatus"></h2>
+      <a href="#" class="btn" data-anijs="if: click, do: pulse animated, to: .reg_screen, before: validate">
+       SignUp
+     </a>
+
+      <a class="signup-link" data-anijs="if: click, do: rollIn animated, to: .login_screen, before: showLogin" href="#">Login ?</a>
+
+     </div>
+
+       <br />
+
+  </div>
+</body>
+</html>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+  <script src='http://anijs.github.io/lib/anijs/anijs.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
